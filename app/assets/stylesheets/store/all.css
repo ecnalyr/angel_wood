@@ -10,3 +10,25 @@
  *= require_self
  *= require_tree .
 */
+div.block {
+    width: 192px;
+    height: 192px;
+    float: left;
+    background-color: grey
+}
+
+div.navigation{
+
+}
+
+div.blank_space {
+    background-color: pink
+}
+
+div.wrapper {
+    width: 960px;
+}
+
+header.row {
+    margin-bottom: 0px;
+}
