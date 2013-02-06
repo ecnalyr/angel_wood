@@ -39,6 +39,10 @@ div.wrapper {
     width: 960px;
 }
 
+div.container {
+    width: 960px;
+}
+
 header.row {
     margin-bottom: 0px;
 }
