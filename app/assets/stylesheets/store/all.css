@@ -44,19 +44,15 @@ div.container {
 }
 
 div.product_left {
-    width: 340px;
+    width: 570px;
     float: left;
     display: inline;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 div.product_right {
-    width: 580px;
+    width: 390px;
     float: left;
     display: inline;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 header.row {
