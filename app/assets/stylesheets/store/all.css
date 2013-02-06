@@ -16,7 +16,8 @@ div.block {
     height: 190px;
     float: left;
     background-color: grey;
-    border-bottom: solid 1px;
+    margin-bottom: 1px;
+    margin-right: 1px;
 }
 
 div.no_bottom {
@@ -70,7 +71,7 @@ nav.pagination {
 }
 
 body {
-    background-color: tan;
+    background-color: #8A717B;
 }
 
 div#product-description {
