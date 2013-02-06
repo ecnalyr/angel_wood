@@ -11,10 +11,20 @@
  *= require_tree .
 */
 div.block {
-    width: 192px;
-    height: 192px;
+    width: 190px;
+    /*could be 192 x 192 since there have no borders*/
+    height: 190px;
     float: left;
-    background-color: grey
+    background-color: grey;
+    border-bottom: solid 1px;
+}
+
+div.no_bottom {
+    border-color: grey;
+}
+
+div.product {
+    background-color: white;
 }
 
 div.navigation{
@@ -31,4 +41,12 @@ div.wrapper {
 
 header.row {
     margin-bottom: 0px;
+}
+
+nav.pagination {
+    text-align: right;
+}
+
+body {
+    background-color: tan;
 }
