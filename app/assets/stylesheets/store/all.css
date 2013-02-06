@@ -43,6 +43,22 @@ div.container {
     width: 960px;
 }
 
+div.product_left {
+    width: 340px;
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.product_right {
+    width: 580px;
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 header.row {
     margin-bottom: 0px;
 }
