@@ -15,10 +15,6 @@ Deface::Override.new( :virtual_path => "spree/products/show",
                                               <%= render :partial => 'thumbnails' %>
                                             </div>
                                           </div>
-
-                                          <div data-hook="product_properties">
-                                            <%= render :partial => 'properties' %>
-                                          </div>
                                         
                                         </div>
                                       </div>
@@ -34,13 +30,15 @@ Deface::Override.new( :virtual_path => "spree/products/show",
                                               <%= product_description(@product) rescue t(:product_has_no_description) %>
                                             </div>
 
+                                            <div data-hook="product_properties">
+                                              <%= render :partial => 'properties' %>
+                                            </div>
+
                                             <div id="cart-form" data-hook="cart_form">
                                               <%= render :partial => 'cart_form' %>
                                             </div>
 
                                           </div>
-
-                                          <%= render :partial => 'taxons' %>
 
                                         </div>
                                       </div>

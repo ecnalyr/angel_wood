@@ -72,3 +72,15 @@ nav.pagination {
 body {
     background-color: tan;
 }
+
+div#product-description {
+    padding-left: 10px;
+}
+
+table#product-properties {
+    width: 380px;
+}
+
+div#quantity-field input {
+    visibility: hidden;
+}
