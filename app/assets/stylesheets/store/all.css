@@ -21,7 +21,7 @@ div.block {
 }
 
 div.no_bottom {
-    border-color: #F0F2F0;
+    border-color: #3E5159;
 }
 
 div.product {
@@ -39,7 +39,7 @@ div.navigation{
 }
 
 div.blank_space {
-    background-color: #F0F2F0
+    background-color: #3E5159;
 }
 
 div.wrapper {
@@ -64,6 +64,7 @@ div.product_right {
 
 header.row {
     margin-bottom: 0px;
+    padding-top: 20px;
 }
 
 nav.pagination {
@@ -71,11 +72,12 @@ nav.pagination {
 }
 
 body {
-    background-color: #F0F2F0;
+    background-color: #3E5159;
 }
 
 div#product-description {
     padding-left: 10px;
+    background-color: #A67B77;
 }
 
 table#product-properties {
