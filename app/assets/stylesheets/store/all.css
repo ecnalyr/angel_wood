@@ -87,3 +87,7 @@ table#product-properties {
 div#quantity-field input {
     visibility: hidden;
 }
+
+button#add-to-cart-button {
+    background-color: #965050;
+}
