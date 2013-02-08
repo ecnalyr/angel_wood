@@ -15,7 +15,7 @@ div.block {
     /*could be 192 x 192 since there have no borders*/
     height: 191px;
     float: left;
-    background-color: #8DA69F;
+    background-color: #B39670;
     margin-bottom: 1px;
     margin-right: 1px;
     position: relative;
@@ -50,7 +50,7 @@ div.navigation {
 }
 
 div.blank_space {
-    background-color: #3E5159;
+    background-color: #575451;
 }
 
 div#wrapper {
@@ -84,7 +84,7 @@ nav.pagination {
 }
 
 body {
-    background-color: #3E5159;
+    background-color: #575451;
 }
 
 div#product-description {
