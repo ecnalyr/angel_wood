@@ -18,6 +18,7 @@ div.block {
     background-color: #8DA69F;
     margin-bottom: 1px;
     margin-right: 1px;
+    position: relative;
 }
 
 /*div.navigation div {
@@ -39,7 +40,12 @@ div.product-image img{
     margin-right: auto;
 }
 
-div.navigation{
+div.navigation h1 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+div.navigation {
 
 }
 
@@ -47,8 +53,9 @@ div.blank_space {
     background-color: #3E5159;
 }
 
-div.wrapper {
+div#wrapper {
     width: 960px;
+    background-color: #F0F2F0;
 }
 
 div.container {
@@ -82,11 +89,12 @@ body {
 
 div#product-description {
     padding-left: 10px;
-    background-color: #A67B77;
+    background-color: #F0F2F0;
 }
 
 table#product-properties {
-    width: 380px;
+    width: 375px;
+    border-right: 0px;
 }
 
 div#quantity-field input {
@@ -99,4 +107,12 @@ button#add-to-cart-button {
 
 li#link-to-cart {
     list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+table thead {
+    background-color: white;
 }
