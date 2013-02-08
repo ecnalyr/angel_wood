@@ -11,14 +11,19 @@
  *= require_tree .
 */
 div.block {
-    width: 190px;
+    width: 191px;
     /*could be 192 x 192 since there have no borders*/
-    height: 190px;
+    height: 191px;
     float: left;
     background-color: #8DA69F;
     margin-bottom: 1px;
     margin-right: 1px;
 }
+
+/*div.navigation div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}*/
 
 div.no_bottom {
     border-color: #3E5159;
@@ -51,13 +56,13 @@ div.container {
 }
 
 div.product_left {
-    width: 570px;
+    width: 575px;
     float: left;
     display: inline;
 }
 
 div.product_right {
-    width: 390px;
+    width: 385px;
     float: left;
     display: inline;
 }
@@ -90,4 +95,8 @@ div#quantity-field input {
 
 button#add-to-cart-button {
     background-color: #965050;
+}
+
+li#link-to-cart {
+    list-style-type: none;
 }
