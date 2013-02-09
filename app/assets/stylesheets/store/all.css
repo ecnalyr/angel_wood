@@ -49,6 +49,10 @@ div.navigation {
 
 }
 
+div.block h1 {
+    color: white;
+}
+
 div#logo {
     background-color: #362120;
 }
