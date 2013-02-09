@@ -15,7 +15,7 @@ div.block {
     /*could be 192 x 192 since there have no borders*/
     height: 191px;
     float: left;
-    background-color: #B39670;
+    background-color: #88BFC7;
     margin-bottom: 1px;
     margin-right: 1px;
     position: relative;
@@ -27,7 +27,7 @@ div.block {
 }*/
 
 div.no_bottom {
-    border-color: #3E5159;
+    border-color: transparent;
 }
 
 div.product {
@@ -49,13 +49,24 @@ div.navigation {
 
 }
 
+div#logo {
+    background-color: #362120;
+}
+
+div#gallery {
+    background-color: #632A22;
+}
+
+div#contact {
+    background-color: #9C825D; 
+}
+
 div.blank_space {
-    background-color: #575451;
+    background-color: transparent;
 }
 
 div#wrapper {
     width: 960px;
-    background-color: #F0F2F0;
 }
 
 div.container {
@@ -84,7 +95,25 @@ nav.pagination {
 }
 
 body {
-    background-color: #575451;
+    /*background-color: #9C6740;*/
+    height: 100%;
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-radial-gradient(left top, circle farthest-corner, #FFFFFF 0%, #9C6740 100%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-radial-gradient(left top, circle farthest-corner, #FFFFFF 0%, #9C6740 100%);
+
+    /* Opera */ 
+    background-image: -o-radial-gradient(left top, circle farthest-corner, #FFFFFF 0%, #9C6740 100%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(radial, left top, 0, left top, 994, color-stop(0, #FFFFFF), color-stop(1, #9C6740));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-radial-gradient(left top, circle farthest-corner, #FFFFFF 0%, #9C6740 100%);
+
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: radial-gradient(circle farthest-corner at left top, #FFFFFF 0%, #9C6740 100%);
 }
 
 div#product-description {
