@@ -1,7 +1,7 @@
 AngelWood::Application.routes.draw do
-
-  get "welcome/index"
-
+    match '/welcome' => 'welcome#index'
+    match '/contact' => 'contact_page#index' 
+  
 
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
@@ -9,10 +9,9 @@ AngelWood::Application.routes.draw do
   #
   # We ask that you don't use the :as option here, as Spree relies on it being the default of "spree"
   mount Spree::Core::Engine, :at => '/'
+
   Spree::Core::Engine.routes.draw do 
-    get "welcome/index"
     
-    match '/contact' => 'contact_page#index' 
   end 
           # The priority is based upon order of creation:
   # first created -> highest priority.

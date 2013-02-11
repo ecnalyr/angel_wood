@@ -1,5 +1,4 @@
 class WelcomeController < Spree::StoreController
-    layout 'application'
     respond_to :html
   def index
     @searcher = Spree::Config.searcher_class.new(params)
