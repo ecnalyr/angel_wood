@@ -1,2 +1,2 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<%= render :partial => 'images', :locals => { :products => @products } %>
+<div class="block blank_space"><li id="link-to-cart" data-hook><%= link_to_cart %></li></div>
