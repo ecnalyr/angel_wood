@@ -9,7 +9,7 @@ Deface::Override.new( :virtual_path => "spree/shared/_header",
                                           <%= link_to root_path do %>
                                             <div class="block no_bottom" id="gallery"><h1>Gallery</h1></div>
                                           <% end %>
-                                          <%= link_to "contact" do %>
+                                          <%= link_to contact_path do %>
                                             <div class="block" id="contact"><h1>Contact</h1></div>
                                           <% end %>
                                           <div class="block blank_space">
