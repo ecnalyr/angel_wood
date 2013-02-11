@@ -1,5 +1,7 @@
 AngelWood::Application.routes.draw do
 
+  get "welcome/index"
+
   get "contact_page/index"
   match '/contact' => 'contact_page#index'
 
