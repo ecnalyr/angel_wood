@@ -7,6 +7,11 @@ Deface::Override.new( :virtual_path => "spree/shared/_products",
                                           <div id="product_<%= product.id %>" class="block product" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
                                             <div class="product-image">
                                               <%= link_to small_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
+                                              <% if product.on_sale? %> 
+                                                <div class="for-sale">
+                                                  <p>Available</p>
+                                                </div>
+                                              <% end %>
                                             </div>
                                           </div>
                                         <% end %>
