@@ -174,3 +174,12 @@ li#link-to-cart {
 table thead {
     background-color: white;
 }
+
+
+div#footer-left {
+    float: left;
+}
+
+div#footer-right {
+    float: right;
+}
