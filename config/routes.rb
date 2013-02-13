@@ -2,6 +2,7 @@ AngelWood::Application.routes.draw do
     match '/welcome' => 'welcome#index'
     match '/contact' => 'contact_page#index' 
     resources :products, :module => 'spree'
+    resources :home, :module => 'spree', :only => :index, :except => [:show, :update, :destroy]
 
   
 
