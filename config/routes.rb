@@ -1,6 +1,8 @@
 AngelWood::Application.routes.draw do
     match '/welcome' => 'welcome#index'
     match '/contact' => 'contact_page#index' 
+    resources :products, :module => 'spree'
+
   
 
   # This line mounts Spree's routes at the root of your application.
@@ -11,6 +13,7 @@ AngelWood::Application.routes.draw do
   mount Spree::Core::Engine, :at => '/'
 
   Spree::Core::Engine.routes.draw do 
+
     
   end 
           # The priority is based upon order of creation:
