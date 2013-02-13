@@ -1,0 +1,47 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
+  <head data-hook="inside_head">
+    <%= render :partial => 'spree/shared/head' %>
+  </head>
+  <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
+
+    <div class="container">
+
+      <header id="header" class="row">
+          <div class="navigation">
+            <%= link_to main_app.welcome_url do %>
+              <div class="block" id="logo"><h1>AngelWood</h1></div>
+            <% end %>
+            <%= link_to "root_path" do %>
+              <div class="block no_bottom" id="gallery"><h1>Gallery</h1></div>
+            <% end %>
+            <%= link_to main_app.contact_url do %>
+              <div class="block" id="contact"><h1>Contact</h1></div>
+            <% end %>
+            <div class="block blank_space">
+              <li id="link-to-cart" data-hook><%= link_to_cart %></li>
+            </div>
+            <div class="block blank_space"></div>
+          </div>
+      </header>
+
+        <div id="wrapper" class="row" data-hook>
+
+
+            <%= flash_messages %>
+            <%= yield %>
+
+        </div>
+
+        <%= render :partial => 'spree/shared/footer' %>
+
+    </div>
+
+    <%= render :partial => 'spree/shared/google_analytics' %>
+
+  </body>
+</html>
