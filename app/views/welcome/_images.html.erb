@@ -5,8 +5,8 @@
 <% end %>
 
 <% if products.any? %>
-<ul id="products" class="inline product-listing" data-hook>
-  <% products.each do |product| %>
+<ul id="products" class="inline product-listing welcome-gallery" data-hook>
+  <% products.each_with_index do |product, index| %>
     <% if product.on_display? %>
       <div id="product_<%= product.id %>" class="block product" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
         <div class="product-image">
@@ -14,8 +14,26 @@
         </div>
       </div>
     <% end %>
-    <div class="block blank_space">
-    </div>
+    <% if index == 2 || index == 3 || index == 4 %>
+      <% case index %>
+      <% when 2 %>
+        <%= link_to main_app.welcome_url do %>
+          <div class="block welcome-nav" id="logo"><h1>AngelWood</h1></div>
+        <% end %>
+      <% when 3 %>
+        <%= link_to "root_path" do %>
+          <div class="block welcome-nav" id="gallery"><h1>Gallery</h1></div>
+        <% end %>
+      <% when 4 %>
+        <%= link_to main_app.contact_url do %>
+          <div class="block welcome-nav" id="contact"><h1>Contact</h1></div>
+        <% end %>
+      <% else %>
+      <div class="block blank_space"><h1>We have an incorrect index within the case switch</h1></div>
+      <% end %>
+    <% else %>
+      <div class="block blank_space"></div>
+    <% end %>
   <% end %>
 </ul>
 <% end %>
