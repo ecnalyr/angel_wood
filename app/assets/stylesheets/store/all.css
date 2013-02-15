@@ -148,6 +148,10 @@ table#product-properties {
     border-right: 0px;
 }
 
+div#contact-image {
+    border: 1px solid #999999;
+}
+
 div#quantity-field input {
     visibility: hidden;
 }

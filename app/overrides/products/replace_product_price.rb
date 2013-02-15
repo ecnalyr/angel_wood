@@ -13,7 +13,7 @@ Deface::Override.new( :virtual_path => "spree/products/_cart_form",
                                             <%= t(:add_to_cart) %>
                                           <% end %>
                                         <% else %>
-                                          <%= content_tag('strong', t(:sold)) %>
+                                          <%= content_tag('strong', t(:sold)) %> | <strong><%= link_to 'Request Similar Item', main_app.contact_url %></strong>
                                         <% end %>
                                       </div>
                                       <div id="quantity-field">
