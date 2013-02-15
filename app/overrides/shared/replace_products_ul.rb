@@ -9,7 +9,7 @@ Deface::Override.new( :virtual_path => "spree/shared/_products",
                                               <%= link_to small_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
                                               <% if product.on_sale? %> 
                                                 <div class="for-sale">
-                                                  Available
+                                                  <%= image_tag("for-sale.png") %>
                                                 </div>
                                               <% end %>
                                             </div>

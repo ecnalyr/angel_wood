@@ -42,15 +42,8 @@ div.product-image img{
 
 div.product-image .for-sale {
     position:absolute;
-    top:15px;
+    top:0px;
     left:0px;
-    text-shadow: 2px 2px 5px #FFFFFF;
-        filter: dropshadow(color=#FFFFFF, offx=2, offy=2);
-    -moz-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        -webkit-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        -o-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        -ms-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-        transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 }
 
 div.navigation h1 {
