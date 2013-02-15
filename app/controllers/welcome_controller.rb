@@ -5,7 +5,7 @@ class WelcomeController < Spree::StoreController
     @searcher = Spree::Config.searcher_class.new(params)
     @searcher.current_user = try_spree_current_user
     @searcher.current_currency = current_currency
-    @products = @searcher.retrieve_products.limit(8).order('random()')
+    @products = @searcher.retrieve_products.where(:worthy_of_welcome_page => true).limit(8).order('random()')
     respond_with(@products)
   end
 end
