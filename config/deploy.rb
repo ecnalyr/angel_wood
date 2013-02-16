@@ -1,25 +1,25 @@
-# require "bundler/capistrano"
-# load "deploy/assets"
+require "bundler/capistrano"
+load "deploy/assets"
 
-# set :application, "angel_wood"
-# set :repository,  "git://github.com/ecnalyr/angel_wood.git"
+set :application, "angel_wood"
+set :repository,  "git://github.com/ecnalyr/angel_wood.git"
 
-# set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
-# # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
+# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-# server = "50.57.75.156"
+server = "50.57.75.156"
 
-# role :web, server                          # Your HTTP server, Apache/etc
-# role :app, server                          # This may be the same as your `Web` server
-# role :db,  server, :primary => true # This is where Rails migrations will run
+role :web, server                          # Your HTTP server, Apache/etc
+role :app, server                          # This may be the same as your `Web` server
+role :db,  server, :primary => true # This is where Rails migrations will run
 
-# set :user, "spree"
+set :user, "spree"
 
-# set :deploy_to, "/home/spree/angel_wood"
-# set :use_sudo, false
+set :deploy_to, "/home/spree/angel_wood"
+set :use_sudo, false
 
-# default_run_options[:shell] = '/bin/bash --login'
-# default_environment["RAILS_ENV"] = 'production'
+default_run_options[:shell] = '/bin/bash --login'
+default_environment["RAILS_ENV"] = 'production'
 
 # # if you want to clean up old releases on each deploy uncomment this:
 # # after "deploy:restart", "deploy:cleanup"
@@ -36,34 +36,34 @@
 # #   end
 # # end
 
-require "bundler/capistrano"
-load 'deploy/assets'
+# require "bundler/capistrano"
+# load 'deploy/assets'
 
-set :application, "angel_wood"
-set :user, 'root'
-set :group, 'www-data'
-set :rails_env, 'production'
+# set :application, "angel_wood"
+# set :user, 'root'
+# set :group, 'www-data'
+# set :rails_env, 'production'
 
-role :web, '50.57.75.156'
-role :app, '50.57.75.156'
-role :db,  '50.57.75.156', :primary => true
+# role :web, '50.57.75.156'
+# role :app, '50.57.75.156'
+# role :db,  '50.57.75.156', :primary => true
 
-set :scm, :git
-set :repository,  "git://github.com/ecnalyr/angel_wood.git"
-set :branch,      "master"
-set :deploy_to,   "/data/#{application}"
-set :deploy_via,  :remote_cache
-set :use_sudo,    false
+# set :scm, :git
+# set :repository,  "git://github.com/ecnalyr/angel_wood.git"
+# set :branch,      "master"
+# set :deploy_to,   "/data/#{application}"
+# set :deploy_via,  :remote_cache
+# set :use_sudo,    false
 
-default_run_options[:pty] = true
-set :ssh_options, { :forward_agent => true }
+# default_run_options[:pty] = true
+# set :ssh_options, { :forward_agent => true }
 
-namespace :foreman do
-  desc "Export the Procfile to Bluepill's .pill script"
-  task :export, :roles => :app do
-    run "cd #{current_path} && bundle exec foreman export bluepill /data/#{application}/shared/config"
-    sudo "bluepill load /data/#{application}/shared/config/#{application}.pill"
-  end
+# namespace :foreman do
+#   desc "Export the Procfile to Bluepill's .pill script"
+#   task :export, :roles => :app do
+#     run "cd #{current_path} && bundle exec foreman export bluepill /data/#{application}/shared/config"
+#     sudo "bluepill load /data/#{application}/shared/config/#{application}.pill"
+#   end
 
   desc "Start the application services"
   task :start, :roles => :app do
