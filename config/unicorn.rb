@@ -16,7 +16,7 @@ preload_app true
 # nuke workers after 30 seconds instead of 60 seconds (the default)
 timeout 30
  
-pid "/tmp/spree.angel_wood.pid"
+pid "/tmp/unicorn.angel_wood.pid"
  
 # Production specific settings
 if env == "production"
