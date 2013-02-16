@@ -55,4 +55,5 @@ gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-s
 group :production do
   gem 'therubyracer'
   gem 'unicorn'
+  gem 'pg'
 end
