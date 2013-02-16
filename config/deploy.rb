@@ -24,7 +24,7 @@ default_environment["RAILS_ENV"] = 'production'
 namespace :unicorn do
   desc "Zero-downtime restart of Unicorn"
   task :restart, except: { no_release: true } do
-    run "kill -s USR2 `cat /tmp/unicorn.[angel_wood].pid`"
+    run "kill -s USR2 `cat /tmp/unicorn.angel_wood.pid`"
   end
  
   desc "Start unicorn"
@@ -34,7 +34,7 @@ namespace :unicorn do
  
   desc "Stop unicorn"
   task :stop, except: { no_release: true } do
-    run "kill -s QUIT `cat /tmp/unicorn.[angel_wood].pid`"
+    run "kill -s QUIT `cat /tmp/unicorn.angel_wood.pid`"
   end
 end
  
