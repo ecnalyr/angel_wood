@@ -9,10 +9,12 @@
 
  *= require_self
  *= require_tree .
+ *= require store/spree_product_zoom
 */
 div.block {
     width: 191px;
-    /*could be 192 x 192 since there have no borders*/
+    /*could be 192 x 192 since there have no borders *= require store/spree_product_zoom
+*/
     height: 191px;
     float: left;
     background-color: #88BFC7;
@@ -24,7 +26,8 @@ div.block {
 /*div.navigation div {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-}*/
+} *= require store/spree_product_zoom
+*/
 
 div.no_bottom {
     border-color: transparent;
@@ -117,24 +120,31 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*background-color: #9C6740;*/
+    /*background-color: #9C6740; *= require store/spree_product_zoom
+*/
     height: 100%;
-    /* IE10 Consumer Preview */ 
+    /* IE10 Consumer Preview  *= require store/spree_product_zoom
+*/ 
     background-image: -ms-radial-gradient(left top, circle farthest-corner, #FFFFFF 0%, #9C6740 100%);
 
-    /* Mozilla Firefox */ 
+    /* Mozilla Firefox  *= require store/spree_product_zoom
+*/ 
     background-image: -moz-radial-gradient(left top, circle farthest-corner, #FFFFFF 0%, #9C6740 100%);
 
-    /* Opera */ 
+    /* Opera  *= require store/spree_product_zoom
+*/ 
     background-image: -o-radial-gradient(left top, circle farthest-corner, #FFFFFF 0%, #9C6740 100%);
 
-    /* Webkit (Safari/Chrome 10) */ 
+    /* Webkit (Safari/Chrome 10)  *= require store/spree_product_zoom
+*/ 
     background-image: -webkit-gradient(radial, left top, 0, left top, 994, color-stop(0, #FFFFFF), color-stop(1, #9C6740));
 
-    /* Webkit (Chrome 11+) */ 
+    /* Webkit (Chrome 11+)  *= require store/spree_product_zoom
+*/ 
     background-image: -webkit-radial-gradient(left top, circle farthest-corner, #FFFFFF 0%, #9C6740 100%);
 
-    /* W3C Markup, IE10 Release Preview */ 
+    /* W3C Markup, IE10 Release Preview  *= require store/spree_product_zoom
+*/ 
     background-image: radial-gradient(circle farthest-corner at left top, #FFFFFF 0%, #9C6740 100%);
 }
 
