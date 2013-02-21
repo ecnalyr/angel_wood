@@ -166,6 +166,10 @@ div#quantity-field input {
     visibility: hidden;
 }
 
+input#order_line_items_attributes_0_quantity {
+    visibility: hidden;
+}
+
 button#add-to-cart-button {
     background-color: #965050;
 }
