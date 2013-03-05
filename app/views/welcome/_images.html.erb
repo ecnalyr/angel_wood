@@ -14,7 +14,7 @@
         </div>
       </div>
     <% end %>
-    <% if index == 2 || index == 3 || index == 4 %>
+    <% if index == 2 || index == 3 || index == 4 || index == 7 %>
       <% case index %>
       <% when 2 %>
         <%= link_to spree.root_path do %>
@@ -28,6 +28,7 @@
         <%= link_to main_app.contact_url do %>
           <div class="block welcome-nav" id="contact"><h1>Contact</h1></div>
         <% end %>
+      <% when 7 %>
       <% else %>
       <div class="block blank_space"><h1>We have an incorrect index within the case switch</h1></div>
       <% end %>
