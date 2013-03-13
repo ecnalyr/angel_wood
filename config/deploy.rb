@@ -7,7 +7,7 @@ set :repository,  "git://github.com/ecnalyr/angel_wood.git"
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-server = "50.57.75.156"
+server = "198.211.110.216"
 
 role :web, server                          # Your HTTP server, Apache/etc
 role :app, server                          # This may be the same as your `Web` server
@@ -70,9 +70,9 @@ after "deploy:restart", "unicorn:restart"
 # set :group, 'www-data'
 # set :rails_env, 'production'
 
-# role :web, '50.57.75.156'
-# role :app, '50.57.75.156'
-# role :db,  '50.57.75.156', :primary => true
+# role :web, '198.211.110.216'
+# role :app, '198.211.110.216'
+# role :db,  '198.211.110.216', :primary => true
 
 # set :scm, :git
 # set :repository,  "git://github.com/ecnalyr/angel_wood.git"
