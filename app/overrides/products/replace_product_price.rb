@@ -5,7 +5,11 @@ Deface::Override.new( :virtual_path => "spree/products/_cart_form",
         
                                       <div id="product-price">
                                         <h6 class="product-section-title"><%= t(:price) %></h6>
-                                        <div><span class="price selling" itemprop="price"><%= @product.price_in(current_currency).display_price %></span></div>
+                                        <% if @product.on_sale? %> 
+                                          <div><span class="price selling" itemprop="price"><%= @product.price_in(current_currency).display_price %></span></div>
+                                        <% else %>
+                                          <div><span class="price selling" itemprop="price">SOLD</span></div>
+                                        <% end %>
                                       </div>
                                       <div class="add-to-cart">
                                         <% if @product.on_sale? %>  
