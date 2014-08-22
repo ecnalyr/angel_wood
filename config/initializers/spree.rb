@@ -12,7 +12,7 @@ Spree.config do |config|
   config.products_per_page = 15
   config.allow_ssl_in_production = true
   config.use_s3 = true
-  config.s3_bucket = 'angelwood'
+  config.s3_bucket = 'angelwoodstandard'
   config.s3_access_key = 'AKIAJ3KJEPL35KTPHDLA'
   config.s3_secret = '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'
   config.s3_protocol = 'http'
