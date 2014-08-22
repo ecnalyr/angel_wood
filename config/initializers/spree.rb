@@ -11,6 +11,12 @@ Spree.config do |config|
   # config.site_name = "Spree Demo Site"
   config.products_per_page = 15
   config.allow_ssl_in_production = true
+  config.use_s3 = true
+  config.s3_bucket = 'angelwood'
+  config.s3_access_key = 'AKIAJ3KJEPL35KTPHDLA'
+  config.s3_secret = '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'
+  config.s3_protocol = 'http'
+  config[:attachment_styles] =  "{\"mini\":\"48x48>\",\"small\":\"190x190\",\"product\":\"575x575\",\"large\":\"600x600>\"}"
 end
 
 Spree.user_class = "Spree::User"
