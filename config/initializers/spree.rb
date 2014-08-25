@@ -13,8 +13,6 @@ Spree.config do |config|
   config.allow_ssl_in_production = true
   config.use_s3 = true
   config.s3_bucket = 'angelwoodstandard'
-  config.s3_access_key = ENV['S3_ACCESS_KEY']
-  config.s3_secret = ENV['S3_SECRET']
   config.s3_protocol = 'http'
   config[:attachment_styles] =  "{\"mini\":\"48x48>\",\"small\":\"190x190\",\"product\":\"575x575\",\"large\":\"600x600>\"}"
 end
