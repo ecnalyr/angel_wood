@@ -1,6 +1,11 @@
 require "bundler/capistrano"
 load "deploy/assets"
 
+set :ssh_options, {
+  config: false
+  #Other options...
+}
+
 set :application, "angel_wood"
 set :repository,  "git://github.com/ecnalyr/angel_wood.git"
 
